@@ -169,11 +169,13 @@ p.chooseposition {
 	border-radius: 0px 25px 25px 0px;
 }
 
-p.candidates {
+button.candidates {
+	min-width: 100%;
 	font-size: 70px;
 	text-align: center;
 	font-weight: bold;
 	border: solid white 2px;
+	border-radius: 25px 25px 25px 25px;
 	background: black;
 	color: white;
 }
