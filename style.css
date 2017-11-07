@@ -110,7 +110,7 @@ div.titles{
 }
 
 div.content {
-	margin-top: 8%;
+	margin-top: 5%;
 }
 
 p.title {
@@ -120,7 +120,7 @@ p.title {
 }
 
 p.subtitles {
-	font-size: 80px;
+	font-size: 60px;
 	padding-left: 30px;
 	border: solid black 2px;
 	border-left: white;
