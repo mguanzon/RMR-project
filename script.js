@@ -26,6 +26,6 @@ function addPosToDropDown() {
   var x = document.getElementById('pos1');
   var option= document.createElement('option');
   option.text = document.getElementById('posName').value;
-  x.add(option);
+  x.options.add(option);
 
 }
