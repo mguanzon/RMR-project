@@ -179,3 +179,27 @@ button.candidates {
 	background: black;
 	color: white;
 }
+
+
+
+/************************* CANDIDATES PAGE ***********************/
+p.clickACandidate {
+	font-size: 50px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 800px;
+	background: gray;
+	color: white;
+	border-radius: 0px 25px 25px 0px;
+}
+
+
+
+
+
+
+
+
+
+
