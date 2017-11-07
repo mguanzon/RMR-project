@@ -23,8 +23,9 @@ window.onclick = function(event) {
 
 /********************* EDIT PAGE (ADD POSITION) ***********************/
 function addPosToDropDown() {
-  var x = document.getElementByID("pos1");
-  var option = document.createElement("option");
-  option.text = document.getElementByID("posName").value;
+  var x = document.getElementById('pos1');
+  var option= document.createElement('option');
+  option.text = document.getElementById('posName').value;
   x.add(option);
+
 }
