@@ -10,34 +10,53 @@
 
 
 <body>
-<center>
-	<p class="page-titles">Favorite Candidates</p>
-	<button type="button" onclick="window.location.href='' "> Lisa </button></center>
-	</br>
-	</br>	
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-	</br>
-</center>
+<script src="script.js"></script>
+
+<!-- Title of Page --> 
+<div class="titles">
+	<p class="title"> Your Favorite Candidates </p>
+	<hr class="toolbar">
+</div>
+
+<!-- ~~~~~~~ Content ~~~~~~~~ -->
+</br>
+</br>
+<p class="chooseposition"> Choose position: </p>
+	<center><div class="dropdown">
+  		<button onclick="myFunction()" class="dropbtn">Position 1      |       ▾</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="#">Position 2</a>
+    		<a href="#">Position 3</a>
+   			<a href="#">Position 4</a>
+  		</div>
+	</div></center>
+
+</br>
+</br>
+
+<p class="chooseposition"> Chosen candidates:</p>
+<p class="candidates"> Lisa</p>
+<p class="candidates"> Mike</p>
+
+
 
 
 <!-- Toolbar --> 
-<center><a href="javascript:history.back()">
-  <img src="backbutton.jpg" class="toolbar">
-</a>
+<div class ="toolbar">
+	<hr class="toolbar">
+	<a href="javascript:history.back()">
+  		<img src="backbutton.jpg" class="backbutton">
+	</a>
 
-<a href="http://mguanzon.github.io/RMR-project/home.html">
-  <img src="homebutton.jpg" class="toolbar">
-</a>
+	<a href="http://mguanzon.github.io/RMR-project/home.html">
+  		<img src="homebutton.jpg" class="homebutton">
+	</a>
 
-<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  <img src="likesbutton.jpg" class="toolbar">
-</a>
-</center>
+	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+  		<img src="likesbutton.jpg" class="likelistbutton">
+	</a>
+</div>
+
 
 
 

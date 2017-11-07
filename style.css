@@ -1,24 +1,179 @@
 
-.toolbar {
-	width: 42px;
-	height: 42px;
-	border: 0;
-	margin: 0 20px 0 0 ;
+/******************** TOOLBAR *********************/
+div.toolbar {
+	position: fixed;
+    margin-top: -20%;
+    top: 100%;
+    z-index: 11000;
 }
 
+hr.toolbar {
+	color: black;
+	border: solid 2px black;
+}
+
+.backbutton{
+	width: 15%;
+	height: 15%;
+	float: left;
+	margin-left: 80px;
+}
+
+.homebutton {
+	width: 15%;
+	height: 15%;
+	margin-left: 180px;
+}
+
+.likelistbutton {
+	width: 15%;
+	height: 15%;
+	float: right;
+	margin-right: 80px;
+}
+
+
+
+/****************** HOME PAGE *********************/
+
+/*COMPANY LOGO */
 .logo {
+	margin-top: 20%;
+	margin-left: 15%;
 	border-radius: 50%;
-	width: 250px;
-	height: 250px;
+	width: 600px;
+	height: 600px;
+	border: solid 3px black;
 }
 
+/* EDIT BUTTON */
 .editbutton {
-	width: 42px;
-	height: 42px;
+	width: 15%;
+	height: 15%;
 	border: 0;
-	margin-left: 150px;
+	float: right;
 }
 
-p.page-titles {
-	font-size: 30px;
+/* TEXT */
+p.company-name {
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+div.homepagecontent{
+	margin-top: 15%;
+}
+
+/* ~~~~~~ DROP DOWN BUTTON ~~~~~~~~~~ */
+.dropbtn {
+	max-width: 600px;
+	min-width: 600px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: left;
+}
+
+select.chosen {
+	max-width: 600px;
+	min-width: 600px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(dropdown.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: right
+}
+
+
+/********************* EDIT PAGE **********************/
+div.titles{
+	min-height: 15%;
+	max-height: 15%;
+}
+
+div.content {
+	margin-top: 8%;
+}
+
+p.title {
+	text-align: center;
+	font-size: 100px;
+	font-weight: bold;
+}
+
+p.subtitles {
+	font-size: 80px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 500px;
+	background: gray;
+	color: white;
+	border-radius: 0px 25px 25px 0px;
+}
+
+input.textbox {
+	max-width: 600px;
+	min-width: 600px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button.search {
+	font-size: 80px;
+	padding-left: 30px;
+	border: solid black 2px;
+	width: 500px;
+	background: gray;
+	color: white;
+	border-radius: 25px 25px 25px 25px;
+}
+
+
+
+/********************* FAVORITES PAGE ********************/
+p.chooseposition {
+	font-size: 70px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 700px;
+	background: gray;
+	color: white;
+	border-radius: 0px 25px 25px 0px;
+}
+
+p.candidates {
+	font-size: 70px;
+	text-align: center;
+	font-weight: bold;
+	border: solid white 2px;
+	background: black;
+	color: white;
 }

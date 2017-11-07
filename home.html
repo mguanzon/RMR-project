@@ -4,46 +4,57 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css"> 
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title> Home </title>
 </head>
 
 
 <body>
+<script src="script.js"></script>
+
 <!-- Edit Button --> 
-<center>
 	<a href="http://mguanzon.github.io/RMR-project/edit.html">
-		<img src="edit.jpg" class="editbutton"></center>
+		<img src="edit.jpg" class="editbutton">
 	</a>
 
 <!-- Logo -->
-<center><img src="logo.jpeg" alt="Logo" class="logo"></center>
+<center><img src="logo.jpeg" alt="Logo" class="logo" ></center>
+<p class="company-name"> Company Name </p>
+
+<center>
+<div class="homepagecontent">
+	<form >
+      <select class="chosen" id="pos1">
+        <option >Position 1</option>
+        <option >Position 2</option>
+      </select>
+      <br>
+    </form>
 
 
 </br>
 </br>
-<center><button type="button" onclick="window.location.href='' ">Sales Associate</button></center>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+	<button onclick= "window.location.href='http://mguanzon.github.io/RMR-project/edit.html'" class="dropbtn">Add new position </button>
+</div>
+</center>
 
 
 <!-- Toolbar --> 
-<center><a href="javascript:history.back()">
-  <img src="backbutton.jpg" class="toolbar">
-</a>
+<div class ="toolbar">
+	<hr class="toolbar">
+	<a href="javascript:history.back()">
+  		<img src="backbutton.jpg" class="backbutton">
+	</a>
 
-<a href="http://mguanzon.github.io/RMR-project/home.html">
-  <img src="homebutton.jpg" class="toolbar">
-</a>
+	<a href="http://mguanzon.github.io/RMR-project/home.html">
+  		<img src="homebutton.jpg" class="homebutton">
+	</a>
 
-<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  <img src="likesbutton.jpg" class="toolbar">
-</a>
-</center>
-
+	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+  		<img src="likesbutton.jpg" class="likelistbutton">
+	</a>
+</div>
 
 
 
