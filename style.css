@@ -195,10 +195,35 @@ p.clickACandidate {
 }
 
 
+/************************ CANDIDATE PROFILE *******************/
+
+/* Candidate Picture */
+
+
+.heartbutton {
+	width: 15%;
+	border: 0;
+	float: right;
+}
+
+.profilepic {
+	margin-top: 20%;
+	margin-left: 15%;
+	border-radius: 50%;
+	width: 500px;
+	height: 500px;
+	border: solid 3px black;
+}
 
 
 
-
+p.profilename {
+	border: black solid 2px;
+	max-width: 500px;
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+}
 
 
 
