@@ -235,6 +235,36 @@ button.addToFav{
 }
 
 
+/************************ LOG IN PAGE *********************/
+
+input.login {
+	max-width: 500px;
+	min-width: 500px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+label.login {
+	font-size: 70px;
+}
+
+p.extra {
+	color:blue;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 40px;
+}
+
+
+
 
 
 
