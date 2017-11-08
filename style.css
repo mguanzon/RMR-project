@@ -282,5 +282,12 @@ textarea.description {
     cursor: pointer;
 }
 
-
-
+button.save {
+	font-size: 80px;
+	padding-left: 30px;
+	border: solid black 2px;
+	width: 400px;
+	background: gray;
+	color: white;
+	border-radius: 25px 25px 25px 25px;
+}
