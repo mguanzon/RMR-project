@@ -204,11 +204,10 @@ p.clickACandidate {
 	width: 15%;
 	border: 0;
 	float: right;
+	margin-left: 20px;
 }
 
 .profilepic {
-	margin-top: 20%;
-	margin-left: 15%;
 	border-radius: 50%;
 	width: 500px;
 	height: 500px;
@@ -216,14 +215,25 @@ p.clickACandidate {
 }
 
 
-
 p.profilename {
+	margin-top: 15%;
 	border: black solid 2px;
 	max-width: 500px;
 	text-align: center;
 	font-size: 70px;
 	font-weight: bold;
 }
+
+button.addToFav{
+	font-size: 80px;
+	padding-left: 30px;
+	border: solid black 2px;
+	width: 600px;
+	background: gray;
+	color: white;
+	border-radius: 25px 25px 25px 25px;
+}
+
 
 
 
