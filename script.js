@@ -19,10 +19,3 @@ function addPosToDropDown() {
   }
   processForm();*/
 
-
-
-
-$("#search").click(function() {
-	$("#pos1").addPosToDropDown();
-
-});
