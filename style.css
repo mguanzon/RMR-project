@@ -62,7 +62,13 @@ p.company-name {
 }
 
 div.homepagecontent{
-	margin-top: 15%;
+	margin-top: 10%;
+}
+
+label.jobOpenings {
+	font-size: 60px;
+	margin-left: 200px;
+	font-weight: bold;
 }
 
 /* ~~~~~~ DROP DOWN BUTTON ~~~~~~~~~~ */
