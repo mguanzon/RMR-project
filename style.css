@@ -71,6 +71,17 @@ label.jobOpenings {
 	font-weight: bold;
 }
 
+button.view {
+	font-size: 40px;
+	padding-left: 30px;
+	border: solid black 2px;
+	width: 600px;
+	background: gray;
+	color: white;
+	border-radius: 25px 25px 25px 25px;
+}
+
+
 /* ~~~~~~ DROP DOWN BUTTON ~~~~~~~~~~ */
 .dropbtn {
 	max-width: 600px;
