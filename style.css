@@ -264,7 +264,23 @@ p.extra {
 }
 
 
+/********************* EDIT COMPANY PROFILE ********************/
+label.editCompProfile {
+	font-size: 50px;
+	margin-left: 20px;
+	font-weight: bold;
+}
 
+textarea.description {
+	max-width: 700px;
+	min-width: 700px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
 
 
