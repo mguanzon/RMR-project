@@ -33,7 +33,7 @@ function save() {
   var compNameInput = document.getElementById("companyName").value;
   var descriptionInput = document.getElementById("description").value;
   console.log(compNameInput);
-  console.log(descriptionInput)
+  console.log(descriptionInput);
   localStorage.setItem("companyName", compNameInput);
   localStorage.setItem("desription", descriptionInput);
   //location.href = "http://mguanzon.github.io/RMR-project/home.html"; 
