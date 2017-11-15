@@ -8,14 +8,14 @@ function createPos() {
   localStorage.setItem("education", educationInput);
   localStorage.setItem("license", licenseInput);
   localStorage.setItem("minGPA", minGPAInput);
-  location.href = "file:///Users/melissaguanzon/Desktop/RMR-project/home.html";
+  location.href = "http://mguanzon.github.io/RMR-project/home.html";
 }
 
 /*Coloring in like button upon like */
 function liked() {
 	var x = document.getElementById("thumb");
   var name = document.getElementById("profilename").innerHTML;
-	if ( x.src === "file:///Users/melissaguanzon/Desktop/RMR-project/blankthumb.jpg") {
+	if ( x.src === "http://mguanzon.github.io/RMR-project/blankthumb.jpg") {
 		document.getElementById("thumb").src = "filledthumb.jpg";
     localStorage.setItem("profileName",  name );	
     confirm("Candidate has been added to your favorites.")
