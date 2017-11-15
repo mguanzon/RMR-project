@@ -81,12 +81,14 @@
 
 <script>  
 var posName = localStorage.getItem("positionName");
-var btn = document.createElement("BUTTON");
-btn.className = "openPos";
-btn.id = posName;
-var btnText = document.createTextNode(posName);
-btn.appendChild(btnText);
-document.getElementById("openPositions").appendChild(btn);
+if (posName != null ) {
+	var btn = document.createElement("BUTTON");
+	btn.className = "openPos";
+	btn.id = posName;
+	var btnText = document.createTextNode(posName);
+	btn.appendChild(btnText);
+	document.getElementById("openPositions").appendChild(btn);
+}
 </script>
 
 <script src="script copy.js"></script>
