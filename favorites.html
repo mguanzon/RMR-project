@@ -9,11 +9,7 @@
 	<title> Favorited Candidates </title>
 </head>
 
-<style>
-.inv {
-	display: none;
-}
-</style>
+
 
 <body>
 
@@ -44,8 +40,8 @@
 	<center>
 	<form >
       <select class="favChosen" id="positions">
-        <option value="content_1" id="salesrep">Sales Representative</option>
-        <option value="content_2" id="receptionist">Receptionist</option>
+        <option id="salesrep">Sales Representative</option>
+        <option id="receptionist">Receptionist</option>
       </select>
       <br>
     </form>
@@ -93,6 +89,9 @@
 	if (profName != null ) {
 		var btn = document.createElement("BUTTON");
 		btn.className = "openPos";
+		btn.onclick = function () {
+		location.href = "http://mguanzon.github.io/RMR-project/"+profName+".html";
+		};
 		var btnText = document.createTextNode( profName);
 		btn.appendChild(btnText);
 		document.getElementById("pos").appendChild(btn);
