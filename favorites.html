@@ -9,6 +9,11 @@
 	<title> Favorited Candidates </title>
 </head>
 
+<style>
+.inv {
+	display: none;
+}
+</style>
 
 <body>
 
@@ -36,24 +41,21 @@
 <p class="favsTitle">
 	Your favorited candidates for
 </p>
-
 	<center>
 	<form >
       <select class="favChosen" id="positions">
-        <option id="salesrep">Sales Representative</option>
-        <option id="receptionist">Receptionist</option>
+        <option value="content_1" id="salesrep">Sales Representative</option>
+        <option value="content_2" id="receptionist">Receptionist</option>
       </select>
       <br>
     </form>
 	</center>
 
 <!-- ~~~~~~~ CONTENT ~~~~~~~~~~ -->
-<div class="content">
+<div class="content" id="content">
 </br>
 <center>
-	<div id="favorites">
-
-	</div>
+	<div id="pos"> </div>
 </center>
 </div>
 
@@ -76,13 +78,15 @@
 </div>
 
 
+
+
 <script>
 	if( localStorage.getItem("positionName") != null ) {
 		var option = document.createElement("option");
 		option.text = localStorage.getItem("positionName");
+		option.value = "3";
 		document.getElementById("positions").appendChild(option);
 	}
-
 
 
 	var profName = localStorage.getItem("profileName");
@@ -91,7 +95,7 @@
 		btn.className = "openPos";
 		var btnText = document.createTextNode( profName);
 		btn.appendChild(btnText);
-		document.getElementById("favorites").appendChild(btn);
+		document.getElementById("pos").appendChild(btn);
 	}	
 </script>
 
