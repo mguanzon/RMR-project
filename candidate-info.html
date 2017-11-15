@@ -11,90 +11,80 @@
 
 
 <body>
-<script src="script.js"></script>
+
+
+<!-- Top Bar -->
+<div class="topbar">
+
+	<!-- User Profile Button -->
+	<a href= "#">
+	<img src="userprofile.jpg" class="userProfileButton">
+	</a>
+
+	<!-- Edit Button --> 
+	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
+		<img src="edit.jpg" class="editbutton">
+	</a>
+
+	<center><p class="topbarFont">
+		iHire
+	</center></p>
+
+</div>
 
 
 
 <!-- Logo -->
-<center><p class="profilename"> Lisa </p></center>
-<center><img src="lisa.jpg" alt="Picture" class="profilepic" ></center>
+<div class="content">
+<center><p class="profilename" id="profilename"> Lisa </p>
+</br>
+<img src="lisa.jpg" alt="Picture" class="profilepic" >
 </br>
 </br>
+<!-- <button id = "experience" class = "openPos" type="button" onclick="window.location.href='https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing'">View Work Experience</button>
+</br>
+</br> -->
+<!-- p class ="extra"> -->
+	<a class ="extra" href="https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing">View Resume</a> 
+<!-- </p>-->
+</center>
 </br>
 </br>
-<button id = "experience" class = "candidates" type="button" onclick="window.location.href='https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing'">View Work Experience</button>
-</br>
-</br>
+<p class="subtitles"> Work Experience </p>
+<center><p class="workExp"> 
+	- Google: Intern </br>
+	- Converse: Sales Associate </br>
+	- Monster: Summer Intern </br>
+</p></center>
 
-<button id = "resume" class = "candidates" type="button" onclick="window.location.href='https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing'">View Resume</button>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<center><button onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidates.html'" class="addToFav">Add to favorites</button></center>
+
+<center>
+	<button id="thumbButton" onclick="liked()" > <img src="blankthumb.jpg" alt="Picture" class="thumb" id="thumb" > </button>
+</center>
 </div>
 
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head> -->
-
-
-
-<!-- <body>
-<profile><i id = "center"class="fa fa-user-circle" style = "color:#4F7F7F;font-size:80px ;margin-top:15px;width:100%;margin: 0 auto;text-align:center;" ></i></profile>
-<p style = "width:100%;margin:0 auto;text-align:center;padding-top:10px">Lisa</p>
-<br><button id = "experience" class = "button" type="button" >View Work Experience</button>
-<br><a href = "https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing"><button id = "resume" class = "button" type="button" >View Resume</button></a>
-<br><div style = "position: fixed;bottom: 20px; left: 0;text-align:center;width:100%;"><i class="fa fa-arrow-left" style = "font-size:30px;color:#4F7F7F;margin-top:15px;" ></i>
-<i class="fa fa-home " style = "text-align:center;font-size:30px;color:#4F7F7F;margin-left:60px;margin-top:15px;" ></i>
-<i class="fa fa-heart" style = "font-size:30px;color:#4F7F7F;margin-left:60px;margin-top:15px;" ></i></div>
-
-
-
-
-<style>
-#experience { width:100%;
-text-align:center;
-color:#207D7F;
-border-radius: 25px;
-padding:15px;
-margin:10px;
-}
-#resume{ width:100%;
-text-align:center;
-color:#207D7F;
-border-radius: 25px;
-padding:15px;
-margin:10px;
-}
-</style> -->
 
 
 <!-- Toolbar --> 
-<div class ="toolbar">
-	<hr class="toolbar">
+<div class="toolbar">
 	<a href="javascript:history.back()">
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  		<img src="likesbutton.jpg" class="likelistbutton">
+  		<img src="likelist.jpg" class="likelistbutton">
 	</a>
+
 </div>
 
 
 
+
+
+<script src="script.js"></script>
 </body>
-</html>
+</html> 

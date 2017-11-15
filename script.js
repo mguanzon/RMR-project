@@ -1,21 +1,29 @@
-
-
-/********************* EDIT PAGE (ADD POSITION) ***********************/
-function addPosToDropDown() {
-  var x = document.getElementById("pos1");
-  var option= document.createElement("option");
-  var text = document.getElementById("posName").value;
-  /*var text = getValue(posName);*/
-  option.text = text;
-  x.add(option);
+/* Creating a new position */
+function createPos() {
+  var positionNameInput = document.getElementById("positionName").value;
+  var educationInput = document.getElementById("education").value;
+  var licenseInput = document.getElementById("license").value;
+  var minGPAInput = document.getElementById("minGPA").value;
+  localStorage.setItem("positionName", positionNameInput);
+  localStorage.setItem("education", educationInput);
+  localStorage.setItem("license", licenseInput);
+  localStorage.setItem("minGPA", minGPAInput);
+  location.href = "file:///Users/melissaguanzon/Desktop/RMR-project/home.html";
 }
 
-/* function processForm()
-  {
-    var parameters = location.search.substring(1).split("&");
-    var temp = parameters[0].split("=");
-    l = unescape(temp[1]);
-    alert(l); //Dialog with the text you put on the textbox
+/*Coloring in like button upon like */
+function liked() {
+	var x = document.getElementById("thumb");
+  var name = document.getElementById("profilename").innerHTML;
+	if ( x.src === "file:///Users/melissaguanzon/Desktop/RMR-project/blankthumb.jpg") {
+		document.getElementById("thumb").src = "filledthumb.jpg";
+    localStorage.setItem("profileName",  name );	
+    confirm("Candidate has been added to your favorites.")
   }
-  processForm();*/
+	else  {
+		document.getElementById("thumb").src = "blankthumb.jpg";
+    localStorage.removeItem("profileName");
+    confirm("Candidate has been removed from your favorites.")
+	}
+}
 

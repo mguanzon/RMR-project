@@ -1,75 +1,86 @@
+/********************* OVERALL ************************/
+body {
+	margin:0;
+}
+
+
+/******************** TOPBAR *******************/
+.topbar {
+  overflow: hidden;
+  background-color: white;	
+  width: 100%;
+  border-bottom: 3px black solid;
+}
+
+p.topbarFont {
+	font-size: 70px;
+	font-family: "american typewriter";
+	margin-top: 10px;
+	margin-left: 10%;
+}
 
 /******************** TOOLBAR *********************/
-div.toolbar {
-	position: fixed;
-    margin-top: -20%;
-    top: 100%;
-    z-index: 11000;
+.toolbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 3px black solid;
 }
 
-hr.toolbar {
-	color: black;
-	border: solid 2px black;
-}
 
 .backbutton{
-	width: 15%;
-	height: 15%;
+	width: 100px;
+	height: 100px;
 	float: left;
 	margin-left: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .homebutton {
-	width: 15%;
-	height: 15%;
-	margin-left: 180px;
+	width: 100px;
+	height: 100px;
+	margin-left: 255px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .likelistbutton {
-	width: 15%;
-	height: 15%;
+	width: 100px;
+	height: 100px;
 	float: right;
 	margin-right: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
 
 /****************** HOME PAGE *********************/
 
-/*COMPANY LOGO */
-.logo {
-	margin-top: 20%;
-	margin-left: 15%;
-	border-radius: 50%;
-	width: 600px;
-	height: 600px;
-	border: solid 3px black;
-}
 
 /* EDIT BUTTON */
 .editbutton {
-	width: 15%;
-	height: 15%;
+	width: 100px;
+	height: 100px;
 	border: 0;
 	float: right;
 }
 
-/* TEXT */
-p.company-name {
-	text-align: center;
-	font-size: 50px;
-	font-weight: bold;
+/* USER PROFILE BUTTON */
+.userProfileButton {
+	width: 110px;
+	height: 110px;
+	border: 0;
+	float: left;
 }
 
-div.homepagecontent{
-	margin-top: 10%;
+div.content {
+	margin-top: 70px;
 }
 
-label.jobOpenings {
-	font-size: 60px;
-	margin-left: 200px;
-	font-weight: bold;
-}
 
 button.view {
 	font-size: 40px;
@@ -81,19 +92,60 @@ button.view {
 	border-radius: 25px 25px 25px 25px;
 }
 
+p.startHiring {
+	font-size: 100px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+}
 
-/* ~~~~~~ DROP DOWN BUTTON ~~~~~~~~~~ */
-.dropbtn {
-	max-width: 600px;
-	min-width: 600px;
-    background-color: black;
-    color: white;
+p.homeSubtitles {
+	font-size: 60px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 70%;
+	background: gray;
+	color: white;
+	border-radius: 0px 25px 25px 0px;
+}
+
+.openPos {
+	max-width: 80%;
+	min-width: 80%;
+    background-color: white;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 50px;
-    border: none;
+    border: black 3px solid;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.openPositions {
+	margin-bottom: 5%;
+}
+
+/* ~~~~~~ DROP DOWN BUTTON ~~~~~~~~~~ */
+.dropbtn {
+	max-width: 600px;
+	min-width: 600px;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    border: solid black 3px;
     border-radius: 25px;
     cursor: pointer;
     text-align: left;
@@ -102,18 +154,18 @@ button.view {
 select.chosen {
 	max-width: 600px;
 	min-width: 600px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 50px;
-    border: none;
+    border: solid black 3px;
     border-radius: 25px;
     cursor: pointer;
     text-align: center;
-    background-image: url(dropdown.jpg);
+    background-image: url(dropdown2.jpg);
     background-repeat: no-repeat;
     background-size: 100px 100px;
     background-position: right
@@ -121,6 +173,17 @@ select.chosen {
 
 
 /********************* EDIT PAGE **********************/
+p.editTitle {
+	font-size: 80px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
 div.titles{
 	min-height: 15%;
 	max-height: 15%;
@@ -150,24 +213,24 @@ p.subtitles {
 input.textbox {
 	max-width: 600px;
 	min-width: 600px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 50px;
-    border: none;
+    border: solid 3px black;
     border-radius: 25px;
     cursor: pointer;
 }
 
-button.search {
+button.create {
 	font-size: 80px;
 	padding-left: 30px;
 	border: solid black 2px;
 	width: 500px;
-	background: gray;
+	background: black;
 	color: white;
 	border-radius: 25px 25px 25px 25px;
 }
@@ -175,7 +238,18 @@ button.search {
 
 
 /********************* FAVORITES PAGE ********************/
-p.chooseposition {
+p.favsTitle {
+	font-size: 73px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.chooseposition {
 	font-size: 70px;
 	padding-left: 30px;
 	border: solid black 2px;
@@ -197,6 +271,26 @@ button.candidates {
 	color: white;
 }
 
+select.favChosen {
+	max-width: 600px;
+	min-width: 600px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    border: solid black 3px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(dropdown.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: right
+}
+
 
 
 /************************* CANDIDATES PAGE ***********************/
@@ -211,6 +305,22 @@ p.clickACandidate {
 	border-radius: 0px 25px 25px 0px;
 }
 
+p.candidatesTitle {
+	font-size: 67px;
+	padding-left: 30px;
+	border: solid black 2px;
+	border-left: white;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+p.posName {
+	margin-top: 30px;
+	font-size: 80px;
+	font-weight: bold;
+}
 
 /************************ CANDIDATE PROFILE *******************/
 
@@ -226,19 +336,21 @@ p.clickACandidate {
 
 .profilepic {
 	border-radius: 50%;
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	border: solid 3px black;
 }
 
 
 p.profilename {
-	margin-top: 15%;
 	border: black solid 2px;
 	max-width: 500px;
 	text-align: center;
 	font-size: 70px;
 	font-weight: bold;
+	border-radius: 15px;
+	color: white;
+	background: black;
 }
 
 button.addToFav{
@@ -251,6 +363,22 @@ button.addToFav{
 	border-radius: 25px 25px 25px 25px;
 }
 
+.thumb {
+	width: 200px;
+	height: 200px;
+}
+
+
+.workExp {
+	margin-top: 20px;
+	font-size: 40px;
+	border: solid black 3px;
+	border-radius: 15px 15px 15px 15px;
+	max-width: 900px;
+	text-align: left;
+	padding: 30px;
+	font-weight: bold;
+}
 
 /************************ LOG IN PAGE *********************/
 
@@ -273,7 +401,7 @@ label.login {
 	font-size: 70px;
 }
 
-p.extra {
+.extra {
 	color:blue;
 	text-align: center;
 	text-decoration: underline;
@@ -300,11 +428,14 @@ textarea.description {
 }
 
 button.save {
+	text-align: center;
 	font-size: 80px;
 	padding-left: 30px;
 	border: solid black 2px;
-	width: 400px;
+	width: 300px;
 	background: gray;
 	color: white;
 	border-radius: 25px 25px 25px 25px;
 }
+
+

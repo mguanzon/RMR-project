@@ -6,27 +6,47 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title> Edit </title>
+	<title> Candidates</title>
 </head>
 
 
 <body>
-<script src="script.js"></script>
 
-<!-- Title of Page --> 
-<div class="titles">
-	<p class="title"> Choose your potential candidates </p>
-	<hr class="toolbar">
+<!-- Top Bar -->
+<div class="topbar">
+
+	<!-- User Profile Button -->
+	<a href= "#">
+	<img src="userprofile.jpg" class="userProfileButton">
+	</a>
+
+	<!-- Edit Button --> 
+	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
+		<img src="edit.jpg" class="editbutton">
+	</a>
+
+	<center><p class="topbarFont">
+		iHire
+	</center></p>
+
 </div>
+
+
+<p class="candidatesTitle">
+	Candidates that are qualified for
+</p>
+<center><p class="posName" id="posName"> </p></center>
+
+
+
+
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~ CONTENT ~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div class="content">
 	<p class="clickACandidate"> Click a name to view their profile.</p>
-	</br>
-	</br>
 <center>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidate-info.html'" class="candidates">Lisa</button>
-	<button type="button" onclick="" class="candidates">Mike</button>
+	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidate-info.html'" class="openPos">Lisa</button>
+	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/mike.html'" class="openPos">Mike</button>
 </center>
 </div>
 
@@ -42,24 +62,28 @@
 
 
 <!-- Toolbar --> 
-<div class ="toolbar">
-	<hr class="toolbar">
+<div class="toolbar">
 	<a href="javascript:history.back()">
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  		<img src="likesbutton.jpg" class="likelistbutton">
+  		<img src="likelist.jpg" class="likelistbutton">
 	</a>
+
 </div>
+	
+
+<script>
+	var posName = localStorage.getItem("positionName");
+	document.getElementById("posName").innerHTML = posName;
+</script>
 
 
-
-
-
+<script src="script.js"></script>
 </body>
 </html> 

@@ -10,63 +10,90 @@
 </head>
 
 
-
 <body>
-<script src="script.js"></script>
 
-<!-- Title of Page --> 
-<div class="titles">
-	<p class="title"> Your Favorite Candidates </p>
-	<hr class="toolbar">
+
+<!-- Top Bar -->
+<div class="topbar">
+
+	<!-- User Profile Button -->
+	<a href= "#">
+	<img src="userprofile.jpg" class="userProfileButton">
+	</a>
+
+	<!-- Edit Button --> 
+	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
+		<img src="edit.jpg" class="editbutton">
+	</a>
+
+	<center><p class="topbarFont">
+		iHire
+	</center></p>
+
 </div>
 
-<!-- ~~~~~~~ Content ~~~~~~~~ -->
-</br>
-</br>
-<p class="chooseposition"> Choose position: </p>
+
+<p class="favsTitle">
+	Your favorited candidates for
+</p>
+
 	<center>
 	<form >
-      <select class="chosen" id="pos1">
-        <option >Position 1</option>
-        <option >Position 2</option>
+      <select class="favChosen" id="positions">
+        <option id="salesrep">Sales Representative</option>
+        <option id="receptionist">Receptionist</option>
       </select>
       <br>
     </form>
 	</center>
 
+<!-- ~~~~~~~ CONTENT ~~~~~~~~~~ -->
+<div class="content">
 </br>
-</br>
-
-<p class="chooseposition"> Favorited candidates:</p>
 <center>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidate-info.html'" class="candidates">Lisa</button>
+	<div id="favorites">
+
+	</div>
 </center>
-
-
-
-
-<!-- Toolbar --> 
-<div class ="toolbar">
-	<hr class="toolbar">
-	<a href="javascript:history.back()">
-  		<img src="backbutton.jpg" class="backbutton">
-	</a>
-
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
-  		<img src="homebutton.jpg" class="homebutton">
-	</a>
-
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  		<img src="likesbutton.jpg" class="likelistbutton">
-	</a>
 </div>
 
 
 
+<!-- Toolbar --> 
+<div class="toolbar">
+	<a href="javascript:history.back()">
+  		<img src="backbutton.jpg" class="backbutton">
+	</a>
+	
+	<a href="http://mguanzon.github.io/RMR-project/home.html">
+  		<img src="homebutton.jpg" class="homebutton">
+	</a>
+	
+	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+  		<img src="likelist.jpg" class="likelistbutton">
+	</a>
+
+</div>
+
+
+<script>
+	var option = document.createElement("option");
+	option.text = localStorage.getItem("positionName");
+	document.getElementById("positions").appendChild(option);
 
 
 
+	var profName = localStorage.getItem("profileName");
+	if (profName != null ) {
+		var btn = document.createElement("BUTTON");
+		btn.className = "openPos";
+		var btnText = document.createTextNode( profName);
+		btn.appendChild(btnText);
+		document.getElementById("favorites").appendChild(btn);
+	}	
+</script>
 
 
+<script src="script.js"></script>
 </body>
 </html> 

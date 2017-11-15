@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title> Home </title>
+	<title> Mike </title>
 </head>
 
 
@@ -33,28 +33,29 @@
 </div>
 
 
-<!-- Content -->
-<p class="startHiring">
-	Start hiring! 
-</p>
+
+<!-- Logo -->
 <div class="content">
-<p class="homeSubtitles">
-	Your open positions...
-</p>
+<center><p class="profilename" id="profilename"> Mike </p>
+</br>
+<img src="mike.jpg" alt="Picture" class="profilepic" >
+</br>
+</br>
+
+	<a class ="extra" href="https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing">View Resume</a> 
+
+</center>
+</br>
+</br>
+<p class="subtitles"> Work Experience </p>
+<center><p class="workExp"> 
+	- Qualcomm: Summer Intern</br>
+	- Hollister: Manager </br>
+</p></center>
+
 
 <center>
-<div id="openPositions" class="openPositions">
-	<button type="button" onclick= "window.location.href='http://mguanzon.github.io/RMR-project/candidatesSalesRep.html'" class="openPos" id="salesrep">Sales Representative </button>
-	<button type="button" onclick= "window.location.href='http://mguanzon.github.io/RMR-project/candidatesReceptionist.html'" class="openPos" id="receptionist">Receptionist </button>
-</div>
-</center>
-
-<div id="addPosition">
-<p class="homeSubtitles">
-	Add a new position...
-</p>
-<center> <!-- http://mguanzon.github.io/RMR-project/edit.html -->
-	<button type="button" onclick= "window.location.href='http://mguanzon.github.io/RMR-project/edit.html'" class="openPos">Create qualifications </button>
+	<button id="thumbButton" onclick="liked()" > <img src="blankthumb.jpg" alt="Picture" class="thumb" id="thumb" > </button>
 </center>
 </div>
 
@@ -79,16 +80,7 @@
 
 
 
-<script>  
-var posName = localStorage.getItem("positionName");
-var btn = document.createElement("BUTTON");
-btn.className = "openPos";
-btn.id = posName;
-var btnText = document.createTextNode(posName);
-btn.appendChild(btnText);
-document.getElementById("openPositions").appendChild(btn);
-</script>
 
-<script src="script copy.js"></script>
+<script src="script.js"></script>
 </body>
 </html> 

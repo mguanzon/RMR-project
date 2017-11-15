@@ -12,17 +12,36 @@
 
 <body>
 <script src="script.js"></script>
-<div class="titles">
-	<p class="title"> Edit your profile </p>
-	<hr class="toolbar">
+
+<!-- Top Bar -->
+<div class="topbar">
+
+	<!-- User Profile Button -->
+	<a href= "#">
+	<img src="userprofile.jpg" class="userProfileButton">
+	</a>
+
+	<!-- Edit Button --> 
+	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
+		<img src="edit.jpg" class="editbutton">
+	</a>
+
+	<center><p class="topbarFont">
+		iHire
+	</center></p>
+
 </div>
-</br>
+
+<p class="editTitle">
+	Edit your profile.
+</p>
+
+<div class="content">
 <center><img src="logo.jpeg" alt="Logo" class="profilepic" ></center>
 </br>
 <p class="extra">
 <a href "#">  Change profile picture   </a> 
 </p>
-</br>
 	<form>
 		<label for="companyName" class="editCompProfile">Company Name: </label>
 		<center><input class="login" type="text" id="companyName" autofocus></center>
@@ -38,7 +57,7 @@
 <center><button onclick="window.location.href='http://mguanzon.github.io/RMR-project/home.html'" id="save" class="save">Save</button>
 <button onclick="window.location.href='javascript:history.back()'" id="cancel" class="save">Cancel</button></center>
 
-
+</div>
 
 
 
@@ -48,20 +67,21 @@
 
 
 <!-- Toolbar --> 
-<div class ="toolbar">
-	<hr class="toolbar">
+<div class="toolbar">
 	<a href="javascript:history.back()">
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  		<img src="likesbutton.jpg" class="likelistbutton">
+  		<img src="likelist.jpg" class="likelistbutton">
 	</a>
+
 </div>
+
 
 
 

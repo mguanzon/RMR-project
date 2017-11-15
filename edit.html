@@ -11,20 +11,37 @@
 
 
 <body>
-<script src="script.js"></script>
 
-<!-- Title of Page --> 
-<div class="titles">
-	<p class="title"> Candidate Qualifications </p>
-	<hr class="toolbar">
+<!-- Top Bar -->
+<div class="topbar">
+
+	<!-- User Profile Button -->
+	<a href= "#">
+	<img src="userprofile.jpg" class="userProfileButton">
+	</a>
+
+	<!-- Edit Button --> 
+	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
+		<img src="edit.jpg" class="editbutton">
+	</a>
+
+	<center><p class="topbarFont">
+		iHire
+	</center></p>
+
 </div>
+
+
+<p class="editTitle">
+	Create a new position.
+</p>
 
 <!-- ~~~~~~~ Content ~~~~~~~~ -->
 <div class="content">
 
 <p class="subtitles"> Position Name </p>
 	<center><form action="home.html" method="GET">
-		<input class="textbox" type="text" id="posName" name="posName" autofocus>
+		<input class="textbox" type="text" id="positionName" autofocus>
 	</form></center>
 </br>
 </br>
@@ -33,7 +50,7 @@
 <p class="subtitles"> Education </p>
 	<center>
 	<form >
-      <select class="chosen" id="pos1">
+      <select class="chosen" id="education">
         <option >Associate's Degree</option>
         <option >Bachelor's Degree</option>
         <option >Master's Degree</option>
@@ -51,7 +68,7 @@
 <!-- License -->
 <p class="subtitles"> Licenses </p>
 	<center><form action="  ">
-		<input class="textbox" type="text" autofocus>
+		<input class="textbox" type="text" id="license" autofocus>
 	</form></center>
 
 </br>
@@ -60,36 +77,37 @@
 <!-- GPA -->
 <p class="subtitles"> Minimum GPA </p>
 	<center><form action="  ">
-		<input class="textbox" type="text" autofocus>
+		<input class="textbox" type="text" id="minGPA" autofocus>
 	</form></center>
 </br>
 </br>
 
 
-<!-- Search Button "window.location.href='http://mguanzon.github.io/RMR-project/candidates.html'; -->
-<center><button onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidates.html'" id="search" class="search">Search</button></center>
+<!-- Create Button "window.location.href='http://mguanzon.github.io/RMR-project/home.html'" -->
+<center><button onclick="createPos()" id="create" class="create">Create</button></center>
 </div>
 
 
 <!-- Toolbar --> 
-<div class ="toolbar">
-	<hr class="toolbar">
+<div class="toolbar">
 	<a href="javascript:history.back()">
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
-
+	
 	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
-  		<img src="likesbutton.jpg" class="likelistbutton">
+  		<img src="likelist.jpg" class="likelistbutton">
 	</a>
+
 </div>
 
 
 
 
 
+<script src="script.js"></script>
 </body>
 </html> 
