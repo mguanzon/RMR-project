@@ -16,15 +16,15 @@ function liked() {
 	var x = document.getElementById("thumb");
   var name = document.getElementById("profilename").innerHTML;
   console.log(x.src);
-	if ( x.src === "https://mguanzon.github.io/RMR-project/blankthumb.jpg") {
-		document.getElementById("thumb").src = "filledthumb.jpg";
-    localStorage.setItem("profileName",  name );	
-    confirm("Candidate has been added to your favorites.")
-  }
-	else  {
+	if ( x.src != "https://mguanzon.github.io/RMR-project/blankthumb.jpg") {
 		document.getElementById("thumb").src = "blankthumb.jpg";
     localStorage.removeItem("profileName");
     confirm("Candidate has been removed from your favorites.")
+  }
+	else  {
+   document.getElementById("thumb").src = "filledthumb.jpg";
+    localStorage.setItem("profileName",  name );  
+    confirm("Candidate has been added to your favorites.")
 	}
 }
 
