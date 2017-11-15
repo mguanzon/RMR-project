@@ -77,9 +77,11 @@
 
 
 <script>
-	var option = document.createElement("option");
-	option.text = localStorage.getItem("positionName");
-	document.getElementById("positions").appendChild(option);
+	if( localStorage.getItem("positionName") != null ) {
+		var option = document.createElement("option");
+		option.text = localStorage.getItem("positionName");
+		document.getElementById("positions").appendChild(option);
+	}
 
 
 
