@@ -439,3 +439,16 @@ button.save {
 }
 
 
+
+/******************** COMPANY PROFILE *******************/
+
+.compProf {
+	font-size: 60px;
+	text-decoration: bold;
+}
+
+.description {
+	font-size: 40px;
+	max-width: 800px;
+	font-style: italic;
+}

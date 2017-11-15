@@ -28,3 +28,11 @@ function liked() {
 	}
 }
 
+
+function save() {
+  var compNameInput = document.getElementById("companyName").value;
+  var descriptionInput = document.getElementById("description").value;
+  localStorage.setItem("companyName", compNameInput);
+  localStorage.setItem("desription", descriptionInput);
+  location.href = "http://mguanzon.github.io/RMR-project/home.html"; 
+}

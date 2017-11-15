@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title> Edit Company Profile</title>
+	<title> Edit </title>
 </head>
 
 
@@ -31,32 +31,16 @@
 
 </div>
 
-<p class="editTitle">
-	Edit your profile.
-</p>
-
 <div class="content">
 <center><img src="logo.jpeg" alt="Logo" class="profilepic" ></center>
+<center><p class="compProf" id ="compName"> Company Name </p></center>
 </br>
-<p class="extra">
-<a href "#">  Change profile picture   </a> 
-</p>
-	<form>
-		<label for="companyName" class="editCompProfile">Company Name: </label>
-		<center><input class="login" type="text" id="companyName" autofocus></center>
-	</form>
 </br>
-	<form>
-		<label for="description" class="editCompProfile">Description:   </label></br>
-		<center><textarea rows="4" cols="50" class="description">
-		</textarea></center>
-		<!-- <center><input class="login" type="text" id="password" autofocus></center>-->
-	</form>
-</br>
-<center><button onclick="save()" id="save" class="save">Save</button>
-<button onclick="window.location.href='javascript:history.back()'" id="cancel" class="save">Cancel</button></center>
+<center><p class="description" id="description"> This company is all about love and support. This company is all about love and support.This company is all about love and support.This company is all about love and support.This company is all about love and support.This company is all about love and support.</p></center>
 
 </div>
+
+
 
 
 
@@ -82,8 +66,12 @@
 </div>
 
 
-
-
+<script>
+	var compName = localStorage.getItem("companyName");
+	var description = localStorage.getItem("description");
+	document.getElementById("compName").innerHTML = compName;
+	document.getElementById("description").innerHTML = description; 
+</script>
 
 
 <script src="script.js"></script>
