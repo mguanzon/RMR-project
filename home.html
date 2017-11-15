@@ -85,7 +85,9 @@ if (posName != null ) {
 	var btn = document.createElement("BUTTON");
 	btn.className = "openPos";
 	btn.id = posName;
-	btn.onclick = window.location.href='http://mguanzon.github.io/RMR-project/candidates.html'; 
+	btn.onclick = function () {
+		location.href = "http://mguanzon.github.io/RMR-project/candidates.html";
+	};
 	var btnText = document.createTextNode(posName);
 	btn.appendChild(btnText);
 	document.getElementById("openPositions").appendChild(btn);
