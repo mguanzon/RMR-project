@@ -15,6 +15,7 @@ function createPos() {
 function liked() {
 	var x = document.getElementById("thumb");
   var name = document.getElementById("profilename").innerHTML;
+  console.log(x.src);
 	if ( x.src === "http://mguanzon.github.io/RMR-project/blankthumb.jpg") {
 		document.getElementById("thumb").src = "filledthumb.jpg";
     localStorage.setItem("profileName",  name );	
