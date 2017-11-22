@@ -25,7 +25,7 @@ function liked() {
   var name = document.getElementById("profilename").innerHTML;
   var likedArray = JSON.parse(localStorage.getItem("likes"));
   if( likedArray == null ) likedArray = [];
-	if ( x.src != "https://mguanzon.github.io/blankthumb.jpg") {
+	if ( x.src != "https://mguanzon.github.io/RMR-project/blankthumb.jpg") {
 		document.getElementById("thumb").src = "blankthumb.jpg";
     localStorage.removeItem("profileName");
     confirm("Candidate has been removed from your favorites.")
