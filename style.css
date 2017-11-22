@@ -83,6 +83,7 @@ p.topbarFont {
 
 div.content {
 	margin-top: 40px;
+	overflow:auto;
 }
 
 
