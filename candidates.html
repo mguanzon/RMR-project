@@ -16,13 +16,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -45,17 +45,15 @@
 <div class="content">
 	<p class="clickACandidate"> Click a name to view their profile.</p>
 <center>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidate-info.html'" class="openPos">Lisa</button>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/mike.html'" class="openPos">Mike</button>
+	<button type="button" onclick="window.location.href='Melissa.html'" class="openPos">Melissa</button>
+	<button type="button" onclick="window.location.href='Jose.html'" class="openPos">Jose</button>
+	<button type="button" onclick="window.location.href='Harmansha.html'" class="openPos">Harmansha</button>
+	<button type="button" onclick="window.location.href='Alexa.html'" class="openPos">Alexa</button>
 </center>
 </div>
-
-
-
-
-
-
-
+</br>
+</br>
+<center><button onclick="deletePos()" class="newPos"> Delete this position</button></center>
 
 
 
@@ -67,11 +65,11 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
@@ -79,8 +77,9 @@
 	
 
 <script>
-	var posName = localStorage.getItem("positionName");
+	var posName = localStorage.getItem("currentPosName");
 	document.getElementById("posName").innerHTML = posName;
+	localStorage.setItem("currentPos", posName);
 </script>
 
 

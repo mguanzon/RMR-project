@@ -16,13 +16,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -35,7 +35,7 @@
 <p class="candidatesTitle">
 	Candidates that are qualified for
 </p>
-<center><p class="posName" id="posName">Sales Representative</p></center>
+<center><p class="posName" id="Sales Representative">Sales Representative</p></center>
 
 
 
@@ -45,9 +45,15 @@
 <div class="content">
 	<p class="clickACandidate"> Click a name to view their profile.</p>
 <center>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/mike.html'" class="openPos">Mike</button>
+	<button type="button" onclick="window.location.href='Mike.html'" class="openPos">Mike</button>
+	<button type="button" onclick="window.location.href='Angelica.html'" class="openPos">Angelica</button>
+	<button type="button" onclick="window.location.href='Crystal.html'" class="openPos">Crystal</button>
+
 </center>
 </div>
+</br>
+</br>
+<center><button onclick="deletePos()" class="newPos"> Delete this position</button></center>
 
 
 
@@ -66,17 +72,22 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
 </div>
 	
 
+<script>
+var posName = document.getElementById("Sales Representative").id;
+localStorage.setItem("currentPos", posName);
+
+</script>
 
 
 <script src="script.js"></script>

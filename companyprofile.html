@@ -16,13 +16,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -32,7 +32,7 @@
 </div>
 
 <div class="content">
-<center><img src="logo.jpeg" alt="Logo" class="profilepic" ></center>
+<center><img src="logo.jpeg" alt="Logo" class="profilepic" id="compLogo" ></center>
 <center><p class="compProf" id ="compName"> Company Name </p></center>
 </br>
 </br>
@@ -51,11 +51,11 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
@@ -63,12 +63,18 @@
 
 
 <script>
+	var profilepic = localStorage.getItem("profilePic");
 	var compName = localStorage.getItem("companyName");
 	var descrip = localStorage.getItem("description");
 	console.log(compName);
 	console.log(descrip);
-	document.getElementById("compName").innerHTML = compName;
-	document.getElementById("descrip").innerHTML = descrip; 
+	if ( (compName != null) && (descrip != null) ) {
+		document.getElementById("compName").innerHTML = compName;
+		document.getElementById("descrip").innerHTML = descrip; 
+	}
+	if ( profilepic != null ) {
+		document.getElementById("compLogo").src = profilepic;
+	}
 </script>
 
 

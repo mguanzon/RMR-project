@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+
+
 <head>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css"> 
@@ -16,13 +18,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -36,11 +38,13 @@
 </p>
 
 <div class="content">
-<center><img src="logo.jpeg" alt="Logo" class="profilepic" ></center>
+<center><img src="logo.jpeg" alt="Logo" class="profilepic" id="company" ></center>
+</br><center>
+<label for="upload-file" class="extra"> Upload new profile picture </label>
+<input id="upload-file" type="file" onchange="getFile()"/>
 </br>
-<p class="extra">
-<a href "#">  Change profile picture   </a> 
-</p>
+</br>
+
 	<form>
 		<label for="companyName" class="editCompProfile">Company Name: </label>
 		<center><input class="login" type="text" id="companyName" autofocus></center>
@@ -53,13 +57,12 @@
 		<!-- <center><input class="login" type="text" id="password" autofocus></center>-->
 	</form>
 </br>
-<center><button onclick="save()" id="save" class="save">Save</button>
-<button onclick="window.location.href='javascript:history.back()'" id="cancel" class="save">Cancel</button></center>
+<center>
+<button onclick="window.location.href='javascript:history.back()'" id="cancel" class="save">Cancel</button>
+<button onclick="save()" id="save" class="save">Save</button>
+</center>
 
 </div>
-
-
-
 
 
 
@@ -71,11 +74,11 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
@@ -83,6 +86,21 @@
 
 
 
+<script>
+if (localStorage.getItem("profilePic") != null) {
+	document.getElementById("company").src = localStorage.getItem("profilePic");
+}
+
+function getFile() {
+	var fileString = document.getElementById("upload-file").value;
+	var fileName = fileString.split(/(\\|\/)/g).pop();
+	localStorage.setItem("profilePic", fileName);
+	document.getElementById("company").src = localStorage.getItem("profilePic");
+}
+
+
+
+</script>
 
 
 

@@ -16,13 +16,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -35,7 +35,7 @@
 <p class="candidatesTitle">
 	Candidates that are qualified for
 </p>
-<center><p class="posName" id="posName">Receptionist</p></center>
+<center><p class="posName" id="Receptionist">Receptionist</p></center>
 
 
 
@@ -45,10 +45,16 @@
 <div class="content">
 	<p class="clickACandidate"> Click a name to view their profile.</p>
 <center>
-	<button type="button" onclick="window.location.href='http://mguanzon.github.io/RMR-project/candidate-info.html'" class="openPos">Lisa</button>
+	<button type="button" onclick="window.location.href='Lisa.html'" class="openPos">Lisa</button>
+	<button type="button" onclick="window.location.href='Mary.html'" class="openPos">Mary</button>
+	<button type="button" onclick="window.location.href='Alexander.html'" class="openPos">Alexander</button>
+	<button type="button" onclick="window.location.href='Vivien.html'" class="openPos">Vivien</button>
+	<button type="button" onclick="window.location.href='Kellan.html'" class="openPos">Kellan</button>
 </center>
 </div>
-
+</br>
+</br>
+<center><button onclick="deletePos()" class="newPos"> Delete this position</button></center>
 
 
 
@@ -66,16 +72,22 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
 </div>
 	
+
+<script>
+var posName = document.getElementById("Receptionist").id;
+localStorage.setItem("currentPos", posName);
+
+</script>
 
 
 

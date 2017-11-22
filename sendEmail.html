@@ -31,35 +31,21 @@
 	</center></p>
 
 </div>
+<!-- <label for="recipient" class="recipientLabel">Recipient email:</label> -->
+<input id = "recipient" type="text" class="recipient" placeholder="To: ">
+<input id = "Cc" type="text" class="recipient" placeholder="Cc: ">
+<input id = "subject" type="text" class="recipient" placeholder="Subject: ">
+<textarea rows="15" cols="50" class="recipient" id="description"> </textarea>
+<button type="button" class="send" id="cancel" onclick="javascript:history.back()">Cancel</button>
+<button type="button" class="send" id="cancel" onclick="sendEmail()" style="float: right;">Send</button>
 
 
 
-<!-- Logo -->
-<div class="content">
-<center><p class="profilename" id="profilename"> Mike</p>
-</br>
-<img src="mike.jpg" alt="Picture" class="profilepic" >
-</br>
-</br>
-
-	<a class ="extra" href="resume.html">View Resume</a> 
-
-</center>
-</br>
-</br>
-<p class="subtitles"> Work Experience </p>
-<center><p class="workExp"> 
-	- Qualcomm: Summer Intern</br>
-	- Hollister: Manager </br>
-</p></center>
 
 
-<center>
-	<button id="thumbButton" onclick="liked()" > <img src="blankthumb.jpg" alt="Picture" class="thumb" id="thumb" > </button>
-</br>
-	<button id="sendEmail" class="sendEmail" onclick="window.location.href='sendEmail.html'">Send Email</button>
-</center>
-</div>
+
+
+
 
 
 
@@ -83,18 +69,6 @@
 
 
 
-
-<script>
-var profName = document.getElementById("profilename").innerHTML;
-if( localStorage.getItem(profName+"liked") != "yes") {
-	document.getElementById("thumb").src = "blankthumb.jpg";
-}
-else {
-	document.getElementById("thumb").src = "filledthumb.jpg";
-}
-var name = document.getElementById("profilename").innerHTML
-localStorage.setItem("name", name);
-</script>
 
 
 <script src="script.js"></script>

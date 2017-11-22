@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<title> Mike </title>
+	<title> Resume </title>
 </head>
 
 
@@ -32,34 +32,43 @@
 
 </div>
 
-
-
-<!-- Logo -->
-<div class="content">
-<center><p class="profilename" id="profilename"> Mike</p>
-</br>
-<img src="mike.jpg" alt="Picture" class="profilepic" >
+<p id="name" class="resumeName"></p>
 </br>
 </br>
-
-	<a class ="extra" href="resume.html">View Resume</a> 
-
-</center>
+</br>
+<p class="resumeName">
+~~~~~~~~~~
+</br>
+~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 </br>
 </br>
-<p class="subtitles"> Work Experience </p>
-<center><p class="workExp"> 
-	- Qualcomm: Summer Intern</br>
-	- Hollister: Manager </br>
-</p></center>
-
-
-<center>
-	<button id="thumbButton" onclick="liked()" > <img src="blankthumb.jpg" alt="Picture" class="thumb" id="thumb" > </button>
+~~~~~~~~~~
 </br>
-	<button id="sendEmail" class="sendEmail" onclick="window.location.href='sendEmail.html'">Send Email</button>
-</center>
-</div>
+~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+</br>
+</br>
+~~~~~~~~~~
+</br>
+~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+</br>
+</br>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -81,19 +90,9 @@
 </div>
 
 
-
-
-
 <script>
-var profName = document.getElementById("profilename").innerHTML;
-if( localStorage.getItem(profName+"liked") != "yes") {
-	document.getElementById("thumb").src = "blankthumb.jpg";
-}
-else {
-	document.getElementById("thumb").src = "filledthumb.jpg";
-}
-var name = document.getElementById("profilename").innerHTML
-localStorage.setItem("name", name);
+var name = localStorage.getItem("name");
+document.getElementById("name").innerHTML = name+"'s Resume";
 </script>
 
 

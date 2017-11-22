@@ -17,13 +17,13 @@
 <div class="topbar">
 
 	<!-- User Profile Button -->
-	<a href= "http://mguanzon.github.io/RMR-project/companyprofile.html">
+	<a href= "companyprofile.html">
 	<img src="userprofile.jpg" class="userProfileButton">
 	</a>
 
 	<!-- Edit Button --> 
-	<a href="http://mguanzon.github.io/RMR-project/editCompanyProfile.html">
-		<img src="edit.jpg" class="editbutton">
+	<a href="editCompanyProfile.html">
+		<img src="editprofile.jpg" class="editbutton">
 	</a>
 
 	<center><p class="topbarFont">
@@ -36,16 +36,12 @@
 
 <!-- Logo -->
 <div class="content">
-<center><p class="profilename" id="profilename"> Lisa </p>
-</br>
+<center><p class="profilename" id="profilename"> Lisa</p>
 <img src="lisa.jpg" alt="Picture" class="profilepic" >
 </br>
 </br>
-<!-- <button id = "experience" class = "openPos" type="button" onclick="window.location.href='https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing'">View Work Experience</button>
-</br>
-</br> -->
 <!-- p class ="extra"> -->
-	<a class ="extra" href="https://docs.google.com/document/d/15sGseLZkD0sqWXJhwQvRCEdrkWcePMXzhuU_D3OM_Bs/edit?usp=sharing">View Resume</a> 
+	<a class ="extra" href="resume.html">View Resume</a> 
 <!-- </p>-->
 </center>
 </br>
@@ -60,9 +56,10 @@
 
 <center>
 	<button id="thumbButton" onclick="liked()" > <img src="blankthumb.jpg" alt="Picture" class="thumb" id="thumb" > </button>
+</br>
+	<button id="sendEmail" class="sendEmail" onclick="window.location.href='sendEmail.html'">Send Email</button>
 </center>
 </div>
-
 
 
 <!-- Toolbar --> 
@@ -71,11 +68,11 @@
   		<img src="backbutton.jpg" class="backbutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/home.html">
+	<a href="home.html">
   		<img src="homebutton.jpg" class="homebutton">
 	</a>
 	
-	<a href="http://mguanzon.github.io/RMR-project/favorites.html">
+	<a href="favorites.html">
   		<img src="likelist.jpg" class="likelistbutton">
 	</a>
 
@@ -83,6 +80,19 @@
 
 
 
+
+
+<script>
+var profName = document.getElementById("profilename").innerHTML;
+if( localStorage.getItem(profName+"liked") != "yes") {
+	document.getElementById("thumb").src = "blankthumb.jpg";
+}
+else {
+	document.getElementById("thumb").src = "filledthumb.jpg";
+}
+var name = document.getElementById("profilename").innerHTML
+localStorage.setItem("name", name);
+</script>
 
 
 <script src="script.js"></script>
