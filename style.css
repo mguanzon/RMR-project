@@ -11,7 +11,9 @@ body {
   background-color: white;	
   width: 100%;
   border-bottom: 3px black solid;
-  z-index:1000;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
 p.topbarFont {
