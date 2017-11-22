@@ -21,6 +21,7 @@ function createPos() {
 /*Coloring in like button upon like */
 function liked() {
 	var x = document.getElementById("thumb");
+   console.log(x.src);
   var name = document.getElementById("profilename").innerHTML;
   var likedArray = JSON.parse(localStorage.getItem("likes"));
   if( likedArray == null ) likedArray = [];
