@@ -72,6 +72,11 @@ function sendEmail() {
   javascript:history.back();
 }
 
+function addPosBtn() {
+  tracker = ga.getAll()[0];
+  tracker.send("event", "button", "click");
+  location.href="edit.html";
+}
 
 
 

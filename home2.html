@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110386222-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-110386222-1');
+	</script>
+
+	
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css"> 
 	<link rel="stylesheet" href="style.css">
@@ -40,7 +51,7 @@
 </br>
 <div id="addPosition">
 <center> 
-	<button type="button" style="background: #C0C0C0;" onclick= "window.location.href='edit.html'" class="newPos">Click to add a new position </button>
+	<button type="button" style="background: #C0C0C0;" onclick= "addPosBtn()" class="newPos">Click to add a new position </button>
 </center>
 </div>
 
