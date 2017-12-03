@@ -2,13 +2,14 @@
 body {
 	margin:0;
 	height: 100%;
+	background-color: #900020;
 }
 
 
 /******************** TOPBAR *******************/
 .topbar {
   overflow: hidden;
-  background-color: white;	
+  background-color: #E5E7E6;	
   width: 100%;
   border-bottom: 3px black solid;
   /*overflow: hidden;
@@ -26,7 +27,7 @@ p.topbarFont {
 /******************** TOOLBAR *********************/
 .toolbar {
   overflow: hidden;
-  background-color: white;
+  background-color: #E5E7E6;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -103,7 +104,7 @@ p.startHiring {
 	border: solid black 2px;
 	border-left: white;
 	width: 100%;
-	background: black;
+	background: #343434;
 	color: white;
 	text-align: center;
 }
@@ -114,9 +115,8 @@ p.homeSubtitles {
 	border: solid black 2px;
 	border-left: white;
 	width: 70%;
-	background: gray;
+	background: #595959;
 	color: white;
-	border-radius: 0px 25px 25px 0px;
 }
 
 .openPos {
@@ -200,7 +200,7 @@ p.editTitle {
 	border: solid black 2px;
 	border-left: white;
 	width: 100%;
-	background: black;
+	background: #343434;
 	color: white;
 	text-align: center;
 }
@@ -226,9 +226,8 @@ p.subtitles {
 	border: solid black 2px;
 	border-left: white;
 	width: 500px;
-	background: gray;
+	background: #595959;
 	color: white;
-	border-radius: 0px 25px 25px 0px;
 }
 
 input.textbox {
@@ -251,7 +250,7 @@ button.create {
 	padding-left: 30px;
 	border: solid black 2px;
 	width: 500px;
-	background: black;
+	background: #343434;
 	color: white;
 	border-radius: 25px 25px 25px 25px;
 }
@@ -265,7 +264,7 @@ p.favsTitle {
 	border: solid black 2px;
 	border-left: white;
 	width: 100%;
-	background: black;
+	background: #343434;
 	color: white;
 	text-align: center;
 }
@@ -295,7 +294,7 @@ button.candidates {
 select.favChosen {
 	max-width: 600px;
 	min-width: 600px;
-    background-color: black;
+    background-color: #595959;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -325,9 +324,8 @@ p.clickACandidate {
 	border: solid black 2px;
 	border-left: white;
 	width: 800px;
-	background: gray;
+	background: #595959;
 	color: white;
-	border-radius: 0px 25px 25px 0px;
 }
 
 p.candidatesTitle {
@@ -336,7 +334,7 @@ p.candidatesTitle {
 	border: solid black 2px;
 	border-left: white;
 	width: 100%;
-	background: black;
+	background: #343434;
 	color: white;
 	text-align: center;
 }
@@ -344,7 +342,8 @@ p.candidatesTitle {
 p.posName {
 	margin-top: 30px;
 	font-size: 80px;
-	font-weight: bold;
+	font-weight: ;
+	color: white;
 }
 
 /************************ CANDIDATE PROFILE *******************/
@@ -364,6 +363,7 @@ p.posName {
 	width: 450px;
 	height: 450px;
 	border: solid 3px black;
+	background: white;
 }
 
 
@@ -373,9 +373,8 @@ p.profilename {
 	text-align: center;
 	font-size: 70px;
 	font-weight: bold;
-	border-radius: 15px;
 	color: white;
-	background: black;
+	background: #343434;
 }
 
 button.addToFav{
@@ -398,18 +397,20 @@ button.addToFav{
 	margin-top: 20px;
 	font-size: 40px;
 	border: solid black 3px;
-	border-radius: 15px 15px 15px 15px;
 	max-width: 900px;
 	text-align: left;
 	padding: 30px;
 	font-weight: bold;
+	background: white;
 }
 
 button.sendEmail {
 	font-size: 50px;
 	border: 3px solid black;
-	background: gray;
+	background: #343434;
 	padding: 10px;
+	border-radius: 25px;
+	color: white;
 }
 
 /************************ LOG IN PAGE *********************/
@@ -417,15 +418,14 @@ button.sendEmail {
 input.login {
 	max-width: 500px;
 	min-width: 500px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 50px;
-    border: none;
-    border-radius: 25px;
+    border: 2px black solid;
     cursor: pointer;
 }
 
@@ -434,7 +434,7 @@ label.login {
 }
 
 .extra {
-	color:blue;
+	color: white;
 	text-align: center;
 	text-decoration: underline;
 	font-size: 40px;
@@ -445,17 +445,16 @@ label.login {
 label.editCompProfile {
 	font-size: 50px;
 	margin-left: 20px;
-	font-weight: bold;
+	color: white;
 }
 
 textarea.description {
 	max-width: 700px;
 	min-width: 700px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 40px;
-    border: none;
-    border-radius: 25px;
+    border: 2px solid black;
     cursor: pointer;
 }
 
@@ -465,7 +464,7 @@ button.save {
 	padding-left: 30px;
 	border: solid black 2px;
 	width: 300px;
-	background: gray;
+	background: #343434;
 	color: white;
 	border-radius: 25px 25px 25px 25px;
 }
@@ -479,12 +478,14 @@ button.save {
 .compProf {
 	font-size: 60px;
 	text-decoration: bold;
+	color:white;
 }
 
 .description {
 	font-size: 40px;
 	max-width: 800px;
 	font-style: italic;
+	color: white;
 }
 
 
