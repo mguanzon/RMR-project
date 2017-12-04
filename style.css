@@ -2,14 +2,14 @@
 body {
 	margin:0;
 	height: 100%;
-	background-color: #900020;
+	background-color: #E5E7E6;
 }
 
 
 /******************** TOPBAR *******************/
 .topbar {
   overflow: hidden;
-  background-color: #E5E7E6;	
+  background-color: #95B2B8;	
   width: 100%;
   border-bottom: 3px black solid;
   /*overflow: hidden;
@@ -27,7 +27,7 @@ p.topbarFont {
 /******************** TOOLBAR *********************/
 .toolbar {
   overflow: hidden;
-  background-color: #E5E7E6;
+  background-color: #95B2B8;
   position: fixed;
   bottom: 0;
   width: 100%;
