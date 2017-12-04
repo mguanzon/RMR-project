@@ -435,7 +435,7 @@ label.login {
 }
 
 .extra {
-	color: white;
+	color: blue;
 	text-align: center;
 	text-decoration: underline;
 	font-size: 40px;
@@ -446,7 +446,7 @@ label.login {
 label.editCompProfile {
 	font-size: 50px;
 	margin-left: 20px;
-	color: white;
+	color: #343434;
 }
 
 textarea.description {
@@ -479,14 +479,15 @@ button.save {
 .compProf {
 	font-size: 60px;
 	text-decoration: bold;
-	color:white;
+	color:#343434;
+	font-weight: bold;
 }
 
 .description {
 	font-size: 40px;
 	max-width: 800px;
 	font-style: italic;
-	color: white;
+	color: #343434;
 }
 
 
