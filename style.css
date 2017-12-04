@@ -431,6 +431,11 @@ input.login {
 
 label.login {
 	font-size: 70px;
+	color:#343434;
+}
+
+label.login2 {
+	font-size: 70px;
 	color:white;
 }
 
