@@ -342,8 +342,8 @@ p.candidatesTitle {
 p.posName {
 	margin-top: 30px;
 	font-size: 80px;
-	font-weight: ;
-	color: white;
+	font-weight: bold;
+	color: #343434;
 }
 
 /************************ CANDIDATE PROFILE *******************/
